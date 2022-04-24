@@ -19,6 +19,7 @@ class MainContainer extends Viewport {
             height: 300,
             width : 500,
             style : {flex: 'none', margin: '20px'},
+            reference: 'tab-container',
 
             itemDefaults: {
                 module: Component,
@@ -46,7 +47,12 @@ class MainContainer extends Viewport {
                 ntype: 'button',
                 handler: 'onButtonClick',
                 text: 'hello'
-            }]
+            }, {
+                    ntype: 'button',
+                    handler: 'onAddButtonClick',
+                    style: {marginLeft: '10px'},
+                    text: 'Add Button'
+                }]
         }]
     }}
 }
