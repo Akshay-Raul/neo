@@ -5,19 +5,21 @@ import ComponentController from '../../../src/controller/Component.mjs';
  * @extends Neo.controller.Component
  */
 class MainContainerController extends ComponentController {
-    static getConfig() {return {
-        /**
-         * @member {String} className='MyApp.view.MainContainer'
-         * @protected
-         */
-        className: 'MyApp.view.MainContainer'
-    }}
+    static getConfig() {
+        return {
+            /**
+             * @member {String} className='MyApp.view.MainContainer'
+             * @protected
+             */
+            className: 'MyApp.view.MainContainer'
+        }
+    }
 
     /**
      * @param {Object} data
      */
     onButtonClick(data) {
-      this.getReference('tab-container').activeIndex = 1;
+        this.getReference('tab-container').activeIndex = 1;
     }
 
     /**
